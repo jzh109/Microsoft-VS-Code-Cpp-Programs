@@ -1,0 +1,224 @@
+{
+    "files.defaultLanguage": "c", // ctrl+N新建文件后默认的语言
+    "editor.suggest.snippetsPreventQuickSuggestions": false, // clangd的snippets有很多的跳转点，不用这个就必须手动触发Intellisense了
+    "editor.acceptSuggestionOnEnter": "off", // 我个人的习惯，按回车时一定是真正的换行，只有tab才会接受Intellisense
+    // "editor.snippetSuggestions": "top", // （可选）snippets显示在补全列表顶端，默认是inline
+    "code-runner.runInTerminal": true, // 设置成false会在“输出”中输出，无法输入
+    "code-runner.saveFileBeforeRun": true, // run code前保存
+    "code-runner.preserveFocus": true, // 若为false，run code后光标会聚焦到终端上。如果需要频繁输入数据可设为false
+    "code-runner.clearPreviousOutput": false, // 每次run code前清空属于code runner的终端消息，默认false
+    "code-runner.ignoreSelection": true, // 默认为false，效果是鼠标选中一块代码后可以单独执行，但C是编译型语言，不适合这样用
+    "C_Cpp.clang_format_sortIncludes": true,
+    "files.associations": {
+        "array": "cpp",
+        "atomic": "cpp",
+        "*.tcc": "cpp",
+        "cctype": "cpp",
+        "clocale": "cpp",
+        "cmath": "cpp",
+        "cstdarg": "cpp",
+        "cstddef": "cpp",
+        "cstdint": "cpp",
+        "cstdio": "cpp",
+        "cstdlib": "cpp",
+        "cwchar": "cpp",
+        "cwctype": "cpp",
+        "deque": "cpp",
+        "unordered_map": "cpp",
+        "vector": "cpp",
+        "exception": "cpp",
+        "algorithm": "cpp",
+        "memory": "cpp",
+        "memory_resource": "cpp",
+        "optional": "cpp",
+        "string": "cpp",
+        "string_view": "cpp",
+        "system_error": "cpp",
+        "tuple": "cpp",
+        "type_traits": "cpp",
+        "utility": "cpp",
+        "fstream": "cpp",
+        "initializer_list": "cpp",
+        "iosfwd": "cpp",
+        "iostream": "cpp",
+        "istream": "cpp",
+        "limits": "cpp",
+        "new": "cpp",
+        "ostream": "cpp",
+        "sstream": "cpp",
+        "stdexcept": "cpp",
+        "streambuf": "cpp",
+        "typeinfo": "cpp",
+        "bitset": "cpp",
+        "iomanip": "cpp",
+        "cstring": "cpp",
+        "functional": "cpp",
+        "regex": "cpp",
+        "cfenv": "cpp",
+        "chrono": "cpp",
+        "cinttypes": "cpp",
+        "complex": "cpp",
+        "condition_variable": "cpp",
+        "csetjmp": "cpp",
+        "csignal": "cpp",
+        "ctime": "cpp",
+        "forward_list": "cpp",
+        "list": "cpp",
+        "unordered_set": "cpp",
+        "iterator": "cpp",
+        "map": "cpp",
+        "numeric": "cpp",
+        "random": "cpp",
+        "ratio": "cpp",
+        "set": "cpp",
+        "future": "cpp",
+        "mutex": "cpp",
+        "scoped_allocator": "cpp",
+        "thread": "cpp",
+        "typeindex": "cpp",
+        "valarray": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "Enabled",
+    "compile-hero.disable-compile-files-on-did-save-code": false, // 格式化时调整include的顺序（按字母排序）
+    "editor.fontFamily": "songti, 'Courier New', monospace",
+    "editor.fontSize": 16,
+    "C_Cpp.updateChannel": "Insiders",
+    "editor.mouseWheelZoom": true,
+    "git.ignoreMissingGitWarning": true,
+    "testMate.cpp.log.userId": "806224ecdfdf462c2c24e30e4c1e818f34fc31e5",
+    "testMate.cpp.log.logSentry": "enable",
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "java.semanticHighlighting.enabled": true,
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "editor.fontWeight": "500",
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+    "cmake.configureOnOpen": true,
+    "explorer.confirmDelete": false,
+    "window.menuBarVisibility": "visible",
+    "winopacity.opacity": 230,
+    "http.proxySupport": "off",
+    "editor.formatOnSave": true,
+    "editor.renderControlCharacters": true,
+    "sonarlint.rules": {
+        "java:S106": {
+            "level": "off"
+        },
+        "java:S120": {
+            "level": "off"
+        },
+        "java:S1598": {
+            "level": "off"
+        },
+        "java:S115": {
+            "level": "off"
+        },
+        "java:S1192": {
+            "level": "off"
+        },
+        "java:S2189": {
+            "level": "off"
+        },
+        "java:S131": {
+            "level": "off"
+        },
+        "python:S3776": {
+            "level": "off"
+        },
+        "python:S117": {
+            "level": "off"
+        },
+        "python:S116": {
+            "level": "off"
+        },
+        "python:S100": {
+            "level": "off"
+        }
+    },
+    "update.mode": "none",
+    "java.home": "C:/Program Files/Java/jdk-14.0.2",
+    "java.requirements.JDK11Warning": false,
+    "java.import.gradle.home": "",
+    "code-runner.executorMap": {
+        "javascript": "node",
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "c": "cd $dir && gcc '$fileName' -o '$fileNameWithoutExt.exe' -Wall -g -O2 -static-libgcc -std=c11 -fexec-charset=GBK && &'$dir$fileNameWithoutExt'",
+        "cpp": "cd $dir && g++ '$fileName' -o '$fileNameWithoutExt.exe' -Wall -g -O2 -static-libgcc -std=c++17 -fexec-charset=GBK && &'$dir$fileNameWithoutExt'",
+        "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "php": "php",
+        "python": "python -u",
+        "perl": "perl",
+        "perl6": "perl6",
+        "ruby": "ruby",
+        "go": "go run",
+        "lua": "lua",
+        "groovy": "groovy",
+        "powershell": "powershell -ExecutionPolicy ByPass -File",
+        "bat": "cmd /c",
+        "shellscript": "bash",
+        "fsharp": "fsi",
+        "csharp": "scriptcs",
+        "vbscript": "cscript //Nologo",
+        "typescript": "ts-node",
+        "coffeescript": "coffee",
+        "scala": "scala",
+        "swift": "swift",
+        "julia": "julia",
+        "crystal": "crystal",
+        "ocaml": "ocaml",
+        "r": "Rscript",
+        "applescript": "osascript",
+        "clojure": "lein exec",
+        "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+        "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+        "racket": "racket",
+        "scheme": "csi -script",
+        "ahk": "autohotkey",
+        "autoit": "autoit3",
+        "dart": "dart",
+        "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+        "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+        "haskell": "runhaskell",
+        "nim": "nim compile --verbosity:0 --hints:off --run",
+        "lisp": "sbcl --script",
+        "kit": "kitc --run",
+        "v": "v run",
+        "sass": "sass --style expanded",
+        "scss": "scss --style expanded",
+        "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+        "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+    },
+    "gradle.javaDebug": {
+        "tasks": [
+            "run",
+            "runBoot",
+            "test",
+            "intTest",
+            "integration"
+        ]
+    },
+    "python.languageServer": "Pylance",
+    "git.autofetch": true,
+    "git.suggestSmartCommit": false,
+    "git.confirmSync": false,
+    "cSpell.userWords": [
+        "fpin",
+        "fpout",
+        "isdigit",
+        "jieba",
+        "lenb",
+        "sklearn",
+        "timeit"
+    ],
+    "vscodeGoogleTranslate.preferredLanguage": "Chinese (Simplified)"
+}

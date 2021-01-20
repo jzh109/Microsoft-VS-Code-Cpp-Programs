@@ -1,0 +1,2 @@
+E:\Dev-Cpp\Program\Programming_Homework_for_CPP\06\02morse\x64\Debug\02morse.exe
+E:\Dev-Cpp\Program\Programming_Homework_for_CPP\06\02morse\x64\Debug\02morse.pdb

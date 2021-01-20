@@ -1,0 +1,6 @@
+#include <stdio.h>
+int abc.cpp;
+int main()
+{
+	freopen(abc.cpp);
+} 
