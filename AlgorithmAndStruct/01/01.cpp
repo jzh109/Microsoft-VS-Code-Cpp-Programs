@@ -138,5 +138,6 @@ int main(int argc, const char **argv)
     struct Node *list = CreateNew(length);
     list = SortList(list);
     PrintData(list);
+    free(list);
     return 0;
 }

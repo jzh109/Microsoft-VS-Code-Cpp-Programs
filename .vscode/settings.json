@@ -220,5 +220,8 @@
         "sklearn",
         "timeit"
     ],
-    "vscodeGoogleTranslate.preferredLanguage": "Chinese (Simplified)"
+    "vscodeGoogleTranslate.preferredLanguage": "Chinese (Simplified)",
+    "cSpell.words": [
+        "stoi"
+    ]
 }
